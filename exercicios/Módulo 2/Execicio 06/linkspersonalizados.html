@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links personalizados</title>
+</head>
+<style>
+    a { display: block;
+        margin: 10px auto 10px auto;
+        color: darkmagenta;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: 1px;
+        width: 400px;
+    
+        
+    
+    }
+    a:visited {color: rgb(85, 0, 0);
+               background-color: aqua;
+               width: 100px;
+               height: 100px;
+    }
+a:hover {color: cadetblue;
+
+}
+a:active {color: blue;}
+a::after {content: '[linkexterno]';}
+/*              
+          Seletores Personalizados
+    #   = ID
+    .   = Class
+    :   = peseudo-class
+    ::  = peseudo-elemento
+    >   = Children
+
+    para deixar alguma box no centro eu uso em style margin:auto;
+*/
+</style>
+<body>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/ "target="_blank" real="external">Youtube</a></li>
+        <li><a href="https://www.netflix.com/browse" target="_blank" real="external">Netflix</a></li>
+        <li><a href="https://chatgpt.com/" target="_blank" real="external">descubra</a></li>
+       
+    </ul>
+    <span></span>
+</body>
+</html>

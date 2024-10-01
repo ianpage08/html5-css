@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'android' ;
+    src: url(projeto/fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'destaque' ;
+    src: url(CollegiateBlackFLF.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+#99B894
+#618E5A
+#C2E4BD
+#36632F
+#173911
+posso Criar uma Variavel global para facilitar a montagens TAGG root
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0: #d6f7d0;
+    --cor1: #99B894;
+    --cor2: #618E5A;
+    --cor3: #36632F;
+    --cor4: #173911;
+
+    --fonte-padrao: Arial, 'Cambria', Monospace;
+    --fonte-especial: "android", 'cursive';
+    --fonte-destaque:'destaque';
+
+
+}
+body { 
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom,#173911,#99B894 );
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+
+
+}
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: hsl(0, 0%, 0%);
+    margin-top: 15px;
+    
+    
+}
+nav {
+    background-color: #99B894;
+    padding: 10px;
+}
+a:hover {
+    background-color: rgb(202, 253, 186);
+    color:rgb(0, 0, 0) ;
+    border-radius: 10px 10px 0px 0px;
+} 
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    transition-duration: 0.6s;
+    
+}
+
+main { 
+    background-color: aliceblue;
+    padding: 15px;
+    min-width: 350px;
+    max-width: 800px ;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+main h1 {
+    font-family: var(--fonte-especial);
+    background-image: linear-gradient(to right, #99b8948f, #d6f7d04f);
+    padding: 3px;
+    color: #173911;
+    
+    
+
+}
+main h2 {
+    font-family: var(--fonte-especial);
+    color: #173911;
+    padding: 3px;
+    background-image: linear-gradient(to right, #99b8948f, #d6f7d04f);
+}
+main p {
+    font-family: var(--fonte-padrao);
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 15px;
+    padding: 10px;
+    margin: 15px 0px;
+    line-height: 26px;
+    
+}
+main img.pq {
+    max-width: 380px;
+    display: block;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+div.video {
+    
+    background-color: #173911;
+    margin: 0px -15px -30px -15px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 59%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+}
+
+aside {
+    background-color: #99B894;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+aside h3 {
+    background-color:#173911;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow:2px 2px 0px #000000;
+    
+}
+aside p {
+    padding: 15px;
+}
+div.lista {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    
+    
+}
+footer {
+    background-color: #173911;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}

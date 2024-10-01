@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body {background-image:linear-gradient(to left, red , black 80%);}
+/*
+O id precisa colocar um nome diferente para indetificar
+tudo que é ID em HTML é # em css
+em HTLMS é class é ponto final . em css
+class Eu poso ter varios elementos com mesma classe 
+já o ID posso ter um elemento indetificado 
+
+
+ID Só posso indentificar uma Tag por documento ou pagina
+já class  posso ter varis elementos em um documento
+*/
+h1 {color: aliceblue;}
+h1#principal {color: darkgoldenrod;
+    background-color: antiquewhite;
+text-align: center;
+text-shadow:1px 2px 1px black;}
+body {background-image: linear-gradient(to left, red black);
+width:700px;
+
+}
+h2{color: blue;}
+p {color: antiquewhite;
+   text-align: justify;
+ }
+h3 {color: aqua;
+    font-size: 30px;
+}
+.elementos {font-weight: bold;}
+
+.elementos1 {font-family: 'Courier New', Courier, monospace; color: rgb(255, 255, 0);}
+
+.elementos2 { font-style: italic; color: darkseagreen;}

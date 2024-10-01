@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div hover exemplo</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div:hover {color: blue;}
+        div > p {display: none;}
+        div:hover > p {
+            color: antiquewhite;
+            display: block;
+            background-color: blueviolet;
+            height: 300px;
+            width: 200px;
+            text-align: justify;
+            padding: 20px;
+        }
+        /* 
+        classe nome do elemento mais :
+        pseudo elemento  Tag mais ::
+        */
+    </style>
+</head>
+<body>
+  <h1>exemplo 1</h1>
+  <p>passe com o mouse no texto abaixo para ler o conteudo oculto </p>
+  <div>confira esse artigo
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero omnis officia ullam dicta eos aliquid voluptas rem, nemo obcaecati cupiditate consectetur possimus voluptatibus iste enim non deleniti quod. Expedita, maiores.</p>
+  </div> 
+</body>
+</html>
