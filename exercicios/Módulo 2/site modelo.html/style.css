@@ -162,7 +162,7 @@ aside p {
 div.lista {
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 20px;
     
     
 }
