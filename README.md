@@ -3,4 +3,4 @@
 
  estudo de html e css3
 
- <a href="https://ianpage08.github.io/html5-css/exercicios"></a>
+ <a href="https://ianpage08.github.io/html5-css/exercicios/modulo 2/site modelo/correção.html"> abrir </a>
