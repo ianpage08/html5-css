@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+        tr.linha {
+            background-color: gold;
+        }
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding:5px ;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fazendo tabelas</h1>
+    <!--hierarquia de Tabelas (simples)
+        table = tabela
+            table row = linha da tabela 
+                table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+    <table>
+        <tr class="linha"><!--TR tag de tablerow abreviada e TD tag Table data abreviada-->
+            <td>a1</td>
+            <td>b1</td>
+            <td>c1</td>
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        </tr>
+        <tr class="linha">
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+    </table>
+</body>
+</html>
