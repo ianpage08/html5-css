@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: darkkhaki;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            
+
+        }
+        td.pequeno{
+            width: 50px;
+        }
+        tr.fundo {
+            background-color: darkkhaki;
+        }
+        tfoot {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1> <!--anatomia para tabelas Grandes: TAGS
+        TABLE
+            THEAD
+            TBODY
+            TFOOT
+
+            POSSO TER EM TODOS 
+            TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <td>Num</td>
+                <td>8 jogos </td>
+                <td>Nota</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>    
+                <td class="pequeno">01</td>
+                <td>Final Fantasy VII Rebirth</td>
+                <td>41</td>
+            </tr>
+            <tr class="fundo">
+                <td class="pequeno">02</td>
+                <td>Animal Well</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td class="pequeno">03</td>
+                <td>DRagons Dogma</td>
+                <td>76</td>
+            </tr>
+            <tr class="fundo">
+                <td>04</td>
+                <td>Resident Evil 4</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td class="pequeno">05</td>
+                <td>Sons the Forest</td>
+                <td>63</td>
+            </tr >
+            <tr class="fundo">
+                <td class="pequeno">06</td>
+                <td>Tekken</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td class="pequeno">07</td>
+                <td>Mortal kombat</td>
+                <td>63</td>
+            </tr>
+            <tr class="fundo">
+                <td class="pequeno">08</td>
+                <td>Hollow Knight</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>e</td>
+                <td>bons</td>
+                <td>00</td>
+
+            </tr>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>
