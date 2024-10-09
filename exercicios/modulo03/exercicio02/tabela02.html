@@ -7,10 +7,26 @@
     <style>
         table {
             width: 400px;
+            height: 2000px;
             border-collapse: collapse;
+            position: relative;
+
+        }
+        caption {
+            padding: 15px;
+            font-size: 26px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: blanchedalmond;
+
         }
         thead{
             background-color: darkkhaki;
+            
+        }
+        thead > tr > td {
+            position:sticky;
+            top: 0;
+            background-color: bisque;
         }
         td {
             border: 1px solid black;
@@ -22,11 +38,14 @@
         td.pequeno{
             width: 50px;
         }
-        tr.fundo {
-            background-color: darkkhaki;
-        }
-        tfoot {
+        tbody > tr:nth-child(even) { /*odd impa even par*/
+            background-color: darkturquoise;
             
+        }
+        
+        p {
+            width: 300px;
+            text-align: justify;
         }
 
     </style>
@@ -42,6 +61,7 @@
             TR, TD, TH
     -->
     <table>
+        <caption> meus jogos </caption> <!--CAPTION é uma tag que serve para dar um nome a tabela -->
         <thead>
             <tr>
                 <td>Num</td>
@@ -103,5 +123,15 @@
         </tfoot>
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias optio officia architecto consequuntur dolorum omnis unde, dicta mollitia. Doloribus eveniet deserunt animi illo reprehenderit quia voluptatem minus consequuntur deleniti nostrum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit voluptatibus veniam, quo perspiciatis nobis. Repellendus quas, illo harum blanditiis nesciunt sint asperiores placeat tempore nam molestiae mollitia ad. Omnis?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nulla magni nihil, rem ullam reiciendis veritatis consequuntur molestias minima amet laborum accusantium illum, officia alias quam? Incidunt maxime tenetur a?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis recusandae iure vitae sit in quisquam dolores incidunt perferendis quibusdam odio aliquam excepturi suscipit inventore aperiam aliquid, dolorum nulla totam.lorem
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias optio officia architecto consequuntur dolorum omnis unde, dicta mollitia. Doloribus eveniet deserunt animi illo reprehenderit quia voluptatem minus consequuntur deleniti nostrum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit voluptatibus veniam, quo perspiciatis nobis. Repellendus quas, illo harum blanditiis nesciunt sint asperiores placeat tempore nam molestiae mollitia ad. Omnis?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nulla magni nihil, rem ullam reiciendis veritatis consequuntur molestias minima amet laborum accusantium illum, officia alias quam? Incidunt maxime tenetur a?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis recusandae iure vitae sit in quisquam dolores incidunt perferendis quibusdam odio aliquam excepturi suscipit inventore aperiam aliquid, dolorum nulla totam.lorem
+    </p>
 </body>
 </html>
