@@ -7,6 +7,22 @@
 </head>
 <body>
     <h1>dados</h1>
+<form action="cadastro.js" method="post" autocomplete="on">
+
+    <p><label for="inome"></label> 
+       <input type="text" name="nome" id="inome" required minlength="8" maxlength="18" size="16" placeholder="nome de Usuario" autocomplete="username">
+    </p>
+
+    <p><label for="isenha">Senha:</label> 
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="18" size="10" autocomplete="new-password" placeholder="senha">
+    </p>
+
+    <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+</form>
     
 </body>
 </html>
