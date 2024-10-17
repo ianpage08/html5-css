@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>check box</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="mas"> <label for="mas">maculino</label><br>
+            <input type="radio" name="sexo" id="fem"> <label for="fem">feminino</label> <br>
+            <input type="radio" name="sexo" id="nd" checked> <label for="nd">Prefiro não dizer</label>
+<!-- para input readio é preciso ter o mesmo nome-->
+        </fieldset>
+
+        <fieldset>
+            <legend>check</legend>
+            <input type="checkbox" name="jogo1" id="resident"> <label for="resident">resident Evil</label> <br>
+            <input type="checkbox" name="jogo2" id="god of war"> God Of war <br>
+            <input type="checkbox" name="jogo3" id="horizon"> <label for="horizon">HOrizon</label>
+            
+            
+        </fieldset>
+        <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>

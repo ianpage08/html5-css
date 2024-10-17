@@ -8,26 +8,29 @@
 <body>
     <h1>formulario 02</h1>
     <form action="cadastro.js" method="post" autocomplete="on">
-        <p> <label for="iuser">Usuario:</label>
-            <input type="text" name="user" id="iuser" maxlength="20" size="20" autocomplete="username" placeholder="Novo Usuario" required>
-        </p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia"
-            min="0" max="10" step="0.1" placeholder=" Média" required>
-        <p>
-            <input type="date" name="" id="">
-            <label for="imes">Mes</label>
-            <input type="month" name="mes" id="imes" value="2024-10">
-        </p>
-        <p>
-            <label for="Isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" minlength="8" maxlength="16" size="20" placeholder="Nova Senha" autocomplete="new-password" required>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-            <input type="tel" name="" id="">
-        </p>
+        <fieldset> f
+            <legend>nome de formulario</legend>
+            <p> <label for="iuser">Usuario:</label>
+                <input type="text" name="user" id="iuser" maxlength="20" size="20" autocomplete="username" placeholder="Novo Usuario" required>
+            </p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia"
+                min="0" max="10" step="0.1" placeholder=" Média" required>
+            <p>
+                <input type="date" name="" id="">
+                <label for="imes">Mes</label>
+                <input type="month" name="mes" id="imes" value="2024-10">
+            </p>
+            <p>
+                <label for="Isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" minlength="8" maxlength="16" size="20" placeholder="Nova Senha" autocomplete="new-password" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <input type="tel" name="" id="">
+            </p>
+        </fieldset>
         
     </form>
 </body>

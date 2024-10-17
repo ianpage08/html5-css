@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        div {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>elemetnos</h1>
+    <form action="cadastro.js" method="post" autocomplete="">
+        <div>
+            <label for="ipreto">Cor:</label>
+            <input type="color" name="preto" id="ipreto">
+        </div>
+        <div>
+            Nivel de Satisfação:
+            <input type="range" name="sas" id="isas" min="1" max="5" value="1" required oninput="ival.innerHTML = Number(isas.value)">
+            <output>5</output>
+        </div>
+        <div>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+        <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="ist">
+
+                <option value="bahia">bahia</option>
+                <option value="sao paulo">sao paulo</option>
+                <option value="acre">acre</option>
+                <option value="amazonas" >amazo</option>
+            </select>
+                
+        </div>
+        <textarea name="1" id="01"></textarea>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="in1">numero 1</label>
+            <input type="number" name="n1" id="in1" oninput="isoma.innerhtml = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">numero2</label>
+            <input type="number" name="n2" id="in2" oninput="isoma.innerhtml = Number(in1.value) + Number(in2.value)"><br>
+            
+        </p>
+        <p>
+            <label for="isoma">soma</label>
+            <output nome="soma" id="isoma">0</output>
+        </p>
+    </form>
+    
+</body>
+</html>
