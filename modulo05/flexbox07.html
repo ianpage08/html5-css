@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        main {
+            display: flex;
+            background-color: darkcyan;
+            flex-flow: row nowrap;
+            height: 500px;
+            align-items: center;
+            
+            justify-content: space-evenly;
+
+        }
+
+        div {
+            background-color: darkgoldenrod;
+            text-align: center;
+            border: 1px solid black;
+            padding: 30px;
+
+        }
+        div#i1 {
+            align-self: auto;
+        }
+        div#i2 {
+            align-self: center;
+        }
+        div#i3 {
+            align-self: flex-end;
+        }
+        div#i4 {
+            align-self: flex-start;
+        }
+        div#i5 {
+            align-self: stretch;
+        }
+        div#i6 {
+            align-self: baseline;
+        }
+        div#i7 {
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div style="order: 0;"  id="i1">1</div>
+        <div style="order: 6;" id="i2">9</div>
+        <div style="order: 3;" id="i3">6</div>
+        <div style="order: 2;" id="i4">5</div>
+        <div style="order: 1;" id="i5">3</div>
+        <div style="order: 5;" id="i6">8</div>
+        <div style="order: 4;" id="i7">7</div>
+    </main>
+    
+</body>
+</html>

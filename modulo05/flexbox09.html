@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        
+        main {
+            display: flex;
+            background-color: darkcyan;
+            flex-flow: row nowrap;
+            
+            
+            
+            
+
+        }
+
+        div {
+            background-color: rgb(187, 255, 0);
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        
+            /* flex-grow - o quanto pode crescer*/
+            /* flex-grow - o quanto pode diminuir*/
+            /* utilizar 0 fala qque não pode crescer ou encolher e o 1 pode crescer ou encolher */
+            
+
+
+        }
+        div#i1 {
+            flex: 1 4 200px ;
+        }
+        div#i2 {
+            flex: 1 1 150px;
+        }
+        div#i3 {
+            flex: 2 4 auto; /*simplificando o auto é colocar initial u não ser flexiavel uso flex:00 auto ou flex:none ~maximo fe flexibilidade uso o flex: 1 1 auto ou somente flex: auto*/
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="i1">1fdggg fgd</div>
+        <div id="i2">9ddfgss sss sss sss ss ssss ssss</div>
+        <div id="i3">6fd gdg</div>
+        
+    </main>
+    
+</body>
+</html>
