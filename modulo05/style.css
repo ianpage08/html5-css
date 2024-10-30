@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.flexconteiner {
+    background-color: rgb(194, 193, 193);
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+article.midia-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    
+}
+article.text-midia {
+    display: flex;
+    flex-flow:row wrap;
+    
+}
+section > article {
+    border: 2px  dotted black;
+}
+header, section.normal {
+    padding: 25px;
+}
+article > div.text {
+    flex: 1 1 500px;
+}
+article > div.midia {
+    flex: 1 1 500px;
+}
