@@ -17,22 +17,37 @@ section.flexconteiner {
     background-color: rgb(194, 193, 193);
     padding: 25px;
     display: flex;
+    
     flex-flow: column wrap;
 
 }
 article.midia-text {
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap-reverse;
     
+    
+}
+h1, h2 {
+    margin: 10px;
+    text-align: center;
 }
 article.text-midia {
     display: flex;
     flex-flow:row wrap;
+    justify-content: space-between;
     
 }
-section > article {
-    border: 2px  dotted black;
+section > article > div.text > h2 {
+    padding: 10px;
+    text-indent: 30px;
 }
+section > article > div.text > p {
+    padding: 10px;
+    text-align: justify;
+    
+}
+
 header, section.normal {
     padding: 25px;
 }
@@ -41,4 +56,15 @@ article > div.text {
 }
 article > div.midia {
     flex: 1 1 500px;
+}
+div.midia > img {
+    margin: auto;
+    display: block;
+}
+div.midia > iframe {
+    padding: 10px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    
 }
